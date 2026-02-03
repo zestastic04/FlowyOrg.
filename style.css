@@ -462,6 +462,9 @@ body {
 .small-p{
     display: none;
 }
+.small-letter{
+    display: none
+}
 @media screen and (max-width: 272px) {
     .logo{
         display: none;
