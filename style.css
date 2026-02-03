@@ -271,6 +271,11 @@ body {
 .no-tasks{
     color: white;
 }
+@media screen and (max-width: 1000px) {
+    .hero{
+        height: auto;
+    }
+}
 /* Responsive Logic */
 @media (max-width: 768px) {
     .hero-grid{
@@ -278,9 +283,6 @@ body {
     }
     .header-flex{
         padding: 0 20px;
-    }
-    .hero{
-        height: auto;
     }
     .hero-content{
         height: auto;
@@ -404,4 +406,81 @@ body {
 
 .actions button{
     margin-left:8px;
+}
+.mobile-banner1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #6b46c1;
+}
+.mobile-banner2{
+    display: none;
+}
+.mobile-banner3{
+    display: none;
+}
+.mobile-banner4{
+    display: none;
+}
+@media screen and (max-width: 728px) {
+    .mobile-banner2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #6b46c1;
+    }
+    .mobile-banner1{
+        display: none;
+    }
+}
+@media screen and (max-width: 468px){
+    .mobile-banner2{
+        display: none;
+    }
+    .mobile-banner3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #6b46c1;
+    }
+}
+@media screen and (max-width: 310px){
+    .mobile-banner3{
+        display: none;
+    }
+    .mobile-banner4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #6b46c1;
+    }
+}
+.small-p{
+    display: none;
+}
+@media screen and (max-width: 272px) {
+    .logo{
+        display: none;
+    }
+    .small-letter{
+        color: rgb(89, 35, 204);
+        background: white;
+        border-radius: 50%;
+        padding: 5px 12px;
+        font-size: 12px;
+        margin-left: -80px;
+    }
+    .hero-content h1{
+        font-size: 25px;
+    }
+    .big-p{
+        display: none;
+    }
+    .small-p{
+        display: block;
+    }
 }
