@@ -54,7 +54,7 @@ body {
 /* Hero */
 .hero {
     height: 100vh;
-    background-image: url('images/bgone.png');
+    background-image: url('bgone.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -140,7 +140,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background-image: url('images/bg2.png');
+    background-image: url('bg2.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -180,7 +180,7 @@ body {
 
 /* How It Works */
 .how-it-works {
-    background-image: url('images/bg3.png');
+    background-image: url('bg3.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -242,7 +242,7 @@ body {
 
 /* Footer */
 .footer {
-    background-image: url('images/bg4.png');
+    background-image: url('bg4.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
