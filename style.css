@@ -470,6 +470,7 @@ body {
         display: none;
     }
     .small-letter{
+        display: block;
         color: rgb(89, 35, 204);
         background: white;
         border-radius: 50%;
