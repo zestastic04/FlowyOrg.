@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasks</title>
+
+<!-- Boxicons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="tasks.css">
+</head>
+
+<body>
+<header class="main-header">
+    <div class="header-flex">
+        <a href="/" style="text-decoration: none;"><div class="logo"><span class="logo-letter">F</span> 𝖥𝗅𝗈𝗐𝗒𝖮𝗋𝗀.</div></a>
+        <button class="add-btn" onclick="openForm()">Add Task</button>
+    </div>
+</header>
+<!-- TOP -->
+<div class="top-bar">
+
+    <div class="search-box">
+        <i class='bx bx-search'></i>
+        <input id="search" placeholder="Search tasks..." oninput="searchTask()">
+    </div>
+</div>
+
+<!-- STATS -->
+<div class="stats" id="stats">
+    <div class="stat-card">
+        <div>
+            <h4>Total Tasks</h4>
+            <span id="totalTasks">0</span>
+        </div>
+        <i class='bx bx-bar-chart stat-icon'></i>
+    </div>
+
+    <div class="stat-card">
+        <div>
+            <h4>Completed</h4>
+            <span id="completedTasks">0</span>
+        </div>
+        <i class='bx bx-check-circle stat-icon'></i>
+    </div>
+
+    <div class="stat-card">
+        <div>
+            <h4>Overdue</h4>
+            <span id="overdueTasks">0</span>
+        </div>
+        <i class='bx bx-error stat-icon'></i>
+    </div>
+
+    <div class="stat-card">
+        <div>
+            <h4>Due Soon</h4>
+            <span id="dueSoonTasks">0</span>
+        </div>
+        <i class='bx bx-time-five stat-icon'></i>
+    </div>
+</div>
+
+<!-- TASKS -->
+<div id="task-list"></div>
+
+<!-- MODAL -->
+<div class="modal" id="taskModal">
+    <div class="modal-box">
+        <i class='bx bx-x close-btn' onclick="closeForm()"></i>
+        <h2>Add Task</h2>
+
+        <input id="title" placeholder="Title">
+        <textarea id="desc" placeholder="Description"></textarea>
+        <input type="date" id="due">
+
+        <select id="category">
+            <option>Office</option>
+            <option>Study</option>
+            <option>Personal</option>
+            <option>Home</option>
+            <option>Shopping</option>
+            <option>Health</option>
+            <option>Others</option>
+        </select>
+
+        <select id="priority">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+
+        <button onclick="saveTask()">Save Task</button>
+    </div>
+</div>
+
+<!-- YOUR EXISTING JS FILE -->
+<script src="app.js"></script>
+</body>
+</html>
