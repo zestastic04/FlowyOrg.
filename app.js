@@ -7,7 +7,7 @@ function renderTasks(list = tasks){
     container.innerHTML = "";
 
     if(list.length === 0){
-        container.innerHTML = "<p>No tasks yet.</p>";
+        container.innerHTML = "<p class='no-tasks'>No tasks yet.</p>";
         updateStats();
         renderWidgets();
         return;

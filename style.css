@@ -268,7 +268,9 @@ body {
     text-align: center;
     font-size: 0.9rem;
 }
-
+.no-tasks{
+    color: white;
+}
 /* Responsive Logic */
 @media (max-width: 768px) {
     .hero-grid{
